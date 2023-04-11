@@ -8,6 +8,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1 () {
@@ -86,6 +87,15 @@ public class Main {
         int sportbreakfast = fiveBanana + ml200Milk + IceCreamBar + fourEggs;
         double sportbreakfastKg = sportbreakfast * 0.001;
         System.out.println(" вес рецепта спортзавтрака " + sportbreakfastKg + " кг и " + sportbreakfast + " г ");
+    }
+    public static void task7 () {
+        int NeedToReset = 7 * 1000;
+        short loss250InOneDay = 250;
+        int Day1 = NeedToReset / loss250InOneDay;
+        System.out.println(" потребуется " + Day1 + " дней, если тратить 250 грамм в день ");
+        short loss500InOneDay = 500;
+        int Day2 = NeedToReset / loss500InOneDay;
+        System.out.println(" потребуется " + Day2 + " дней, если тратить 500 грамм в день ");
 
     }
 }
