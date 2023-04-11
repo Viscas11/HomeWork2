@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -46,5 +47,20 @@ public class Main {
       short paper = 480;
       var paper_per_student = paper / (studentLPavlovna + studentsASeregeevna + studentsEAndreevna);
         System.out.println(" На каждого ученика рассчитано " + paper_per_student + " листов бумаги ");
+    }
+    public static void task4 () {
+       byte machineProductivityWihtin2Minutes = 16;
+       byte difference1 = 20 / 2;
+       var machineProductivityWihtin20Minutes = machineProductivityWihtin2Minutes * difference1;
+        System.out.println(" За 20 минут машина произвела " + machineProductivityWihtin20Minutes + " штук бутылок " );
+        short difference2 = 1440 / 2;
+       var machineProductivityDuringTheDay = machineProductivityWihtin2Minutes * difference2;
+        System.out.println(" За день машина произвела " + machineProductivityDuringTheDay + " штук бутылок " );
+        int difference3 = difference2 * 3;
+        var machineProductivityDuringThe3Day = machineProductivityWihtin2Minutes * difference3;
+        System.out.println(" За 3 дня машина произвела " + machineProductivityDuringThe3Day + " штук бутылок " );
+        int difference4 = difference2 * 30;
+        var machineProductivityDuringTheMonth = machineProductivityWihtin2Minutes * difference4;
+        System.out.println(" За месяц машина произвела " + machineProductivityDuringTheMonth + " штук бутылок " );
     }
 }
