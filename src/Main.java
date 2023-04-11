@@ -7,6 +7,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1 () {
@@ -65,13 +66,26 @@ public class Main {
         System.out.println(" За месяц машина произвела " + machineProductivityDuringTheMonth + " штук бутылок ");
     }
     public static void task5 () {
-       byte CanOfPaint = 120;
-       byte WhiteCanOfPaintsInOneClass = 2;
-       byte BrownCanOfPaintsInOneClass = 4;
-       int CanOfPaintsInOneClass = WhiteCanOfPaintsInOneClass + BrownCanOfPaintsInOneClass;
-       int numberOfClasses = CanOfPaint / CanOfPaintsInOneClass;
-       int WhiteCanOfPaints = numberOfClasses * WhiteCanOfPaintsInOneClass;
-       int BrownCanOfPaints = numberOfClasses * BrownCanOfPaintsInOneClass;
+        byte CanOfPaint = 120;
+        byte WhiteCanOfPaintsInOneClass = 2;
+        byte BrownCanOfPaintsInOneClass = 4;
+        int CanOfPaintsInOneClass = WhiteCanOfPaintsInOneClass + BrownCanOfPaintsInOneClass;
+        int numberOfClasses = CanOfPaint / CanOfPaintsInOneClass;
+        int WhiteCanOfPaints = numberOfClasses * WhiteCanOfPaintsInOneClass;
+        int BrownCanOfPaints = numberOfClasses * BrownCanOfPaintsInOneClass;
         System.out.println(" В школе, где " + numberOfClasses + " классов, нужно " + WhiteCanOfPaints + " банок белой краски и " + BrownCanOfPaints + " банок коричневой краски ");
+    }
+    public static void task6 () {
+        byte oneBanana = 80;
+        int fiveBanana = oneBanana * 5;
+        byte ml100Milk = 105;
+        int ml200Milk = ml100Milk * 2;
+        byte IceCreamBar = 100;
+        byte oneEgg = 70;
+        int fourEggs = oneEgg * 4;
+        int sportbreakfast = fiveBanana + ml200Milk + IceCreamBar + fourEggs;
+        double sportbreakfastKg = sportbreakfast * 0.001;
+        System.out.println(" вес рецепта спортзавтрака " + sportbreakfastKg + " кг и " + sportbreakfast + " г ");
+
     }
 }
