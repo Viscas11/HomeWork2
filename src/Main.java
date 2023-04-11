@@ -9,6 +9,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1 () {
@@ -85,7 +86,8 @@ public class Main {
         byte oneEgg = 70;
         int fourEggs = oneEgg * 4;
         int sportbreakfast = fiveBanana + ml200Milk + IceCreamBar + fourEggs;
-        double sportbreakfastKg = sportbreakfast * 0.001;
+        int grPerKg = 1000;
+        float sportbreakfastKg = sportbreakfast / (float)grPerKg;
         System.out.println(" вес рецепта спортзавтрака " + sportbreakfastKg + " кг и " + sportbreakfast + " г ");
     }
     public static void task7 () {
@@ -96,6 +98,25 @@ public class Main {
         short loss500InOneDay = 500;
         int Day2 = NeedToReset / loss500InOneDay;
         System.out.println(" потребуется " + Day2 + " дней, если тратить 500 грамм в день ");
-
+    }
+    public static void task8 () {
+        int MashaPerMonth = 67760;
+        int DenisPerMonth = 83690;
+        int KrisPerMonth = 76230;
+        int MashaPerYear = MashaPerMonth * 12;
+        int DenisPerYear = DenisPerMonth * 12;
+        int KrisPerYear = KrisPerMonth * 12;
+        double MashaPerMonthSalryIncrease = Math.ceil (MashaPerMonth * 1.1);
+        double DenisPerMonthSalryIncrease = Math.ceil (DenisPerMonth * 1.1);
+        double KrisPerMonthSalryIncrease = Math.ceil (KrisPerMonth * 1.1);
+        double MashaPerYearSalryIncrease = MashaPerYear * 1.1;
+        double DenisPerYearSalryIncrease = DenisPerYear * 1.1;
+        double KrisPerYearSalryIncrease = KrisPerYear * 1.1;
+        double MashaSalaryDifference = Math.ceil (MashaPerYearSalryIncrease - MashaPerYear);
+        double DenisSalaryDifference = Math.ceil (DenisPerYearSalryIncrease - DenisPerYear);
+        double KrisSalaryDifference = Math.ceil (KrisPerYearSalryIncrease - KrisPerYear);
+        System.out.println(" Маша теперь получает " + MashaPerMonthSalryIncrease + " рублей. Годовой доход вырос на " + MashaSalaryDifference + " рублей ");
+        System.out.println(" Маша теперь получает " + DenisPerMonthSalryIncrease + " рублей. Годовой доход вырос на " + DenisSalaryDifference + " рублей ");
+        System.out.println(" Маша теперь получает " + KrisPerMonthSalryIncrease + " рублей. Годовой доход вырос на " + KrisSalaryDifference + " рублей ");
     }
 }
