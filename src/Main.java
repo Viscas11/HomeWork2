@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1 () {
@@ -37,5 +38,13 @@ public class Main {
         System.out.println(e);
         System.out.println(f);
         System.out.println(g);
+    }
+    public static void task3 () {
+      byte studentLPavlovna = 23;
+      byte studentsASeregeevna = 27;
+      byte studentsEAndreevna = 30;
+      short paper = 480;
+      var paper_per_student = paper / (studentLPavlovna + studentsASeregeevna + studentsEAndreevna);
+        System.out.println(" На каждого ученика рассчитано " + paper_per_student + " листов бумаги ");
     }
 }
